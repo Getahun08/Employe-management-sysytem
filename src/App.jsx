@@ -51,8 +51,8 @@ const token=localStorage.getItem('Token')
     <Route path="/request/Password_reset" element={<PasswordResetRequeast/>}/>
     <Route path="/Password-reset/:token/" element={<PasswordResetconfirm/>}/>
 
-    <Route path="/request/Password_reset" element={<NewpasswordCreateRequest/>}/>
-    <Route path="/Password-reset/:token/" element={<NewpasswordCreateConfirm/>}/>
+    <Route path="/request/Password_reset" element={<PasswordResetRequeast/>}/>
+    <Route path="/Password-reset/:token/" element={<PasswordResetconfirm/>}/>
    <Route path='/logout'  element={token ? <Logout/> : <Navigate to = "/"/>} />
    <Route path='/*'  element={<NotFound/>}/>
   </Routes>
