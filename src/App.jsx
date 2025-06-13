@@ -24,8 +24,6 @@ import { Navigate } from 'react-router-dom'
 import Userview from './Componets/MainComponets/USersview'
 import NotFound from './Componets/MainComponets/NotFound'
 import Dashboard from './Componets/MainComponets/Dashboard'
-import NewpasswordCreateConfirm from './Componets/NewAccountCrateConfrim'
-import NewpasswordCreateRequest from './Componets/newAccountCreatRequest'
 
 function App() {
 const location= useLocation()
