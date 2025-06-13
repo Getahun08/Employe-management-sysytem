@@ -25,10 +25,10 @@ function PasswordResetRequeast() {
 
     const [Showmessage,setShowmessage]=useState(false)
     const submission=(data)=>{
-      AxiosInstance.post('api/password_reset/',{
-        email:data.email,
-      
-    })
+    AxiosInstance.post('https://django-backend-code.onrender.com/api/password_reset/', {
+    email: data.email,
+     })
+
     .then((response)=>{
       setShowmessage(true)
       setTimeout(()=>{
