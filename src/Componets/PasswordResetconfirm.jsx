@@ -35,11 +35,11 @@ function PasswordResetconfirm() {
 
     const [Showmessage,setShowmessage]=useState(false)
     const submission=(data)=>{
-      AxiosInstance.post('api/password_reset/confirm/',{
-        password:data.password,
-        token:token,
-      
-    })
+    AxiosInstance.post('https://django-backend-code.onrender.com/api/password_reset/confirm/', {
+    password: data.password,
+    token: token,
+     })
+
     .then((response)=>{
       setShowmessage(true)
       setTimeout(()=>{
